@@ -66,7 +66,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 	fmt.Println("query is running " + function)
 
 	// Handle different functions
-	if function == "read" {													//read a variable
+	if function == "read" {
 		info, err := t.read(stub, args)
 		if err != nil {
 			fmt.Println("Error Getting info")
@@ -75,7 +75,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 			return info, nil		 
 		}
 	}
-	fmt.Println("query did not find func: " + function)						//error
+	fmt.Println("query did not find func: " + function)	
 
 	return nil, errors.New("Received unknown function query")
 }
