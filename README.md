@@ -1,7 +1,7 @@
 # chaincode-sample
-My first chaincode for Hyperlledger fabric. It can store only one key-value pairs.
+My first chaincode for Hyperledger fabric. It can store only one key-value pairs.
 
-##deploy
+##Deploy
 
 ```
 {
